@@ -4,7 +4,7 @@
   "description": "Landing page for Taamonraset novel",
   "main": "index.html",
   "scripts": {
-    "dev": "npx -y serve . -p 3000"
+    "dev": "npx -y serve . -p 9000"
   },
   "keywords": [],
   "author": "",

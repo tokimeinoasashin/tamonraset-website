@@ -19,14 +19,15 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-bg-wrapper">
+            <img src="images/websitecover.jpg" alt="غلاف رواية تمنراست - أجواء رعب غوطية" loading="eager" class="hero-bg-img">
+            <div class="hero-bg-overlay"></div>
+        </div>
         <div class="container">
-            <div class="cover-wrapper">
-                <img src="cover-placeholder.jpg" alt="غلاف رواية تمنراست" onerror="this.src='https://via.placeholder.com/400x600/1a1a1a/7c0a02?text=غلاف+الرواية'">
-            </div>
             <div class="hero-content">
                 <h1 class="title">تمنراست</h1>
                 <p class="tagline">"هذه ليست رواية بقدر ما هي عالم سوداوي مرعب، يتوسع في خيالك أكثر من أي مكان آخر"</p>
-                <a href="#" class="order-btn">اطلب نسختك الآن</a>
+                <a href="#" class="order-btn" data-social="order_button" target="_blank" rel="noopener">اطلب نسختك الآن</a>
             </div>
         </div>
     </section>
@@ -36,6 +37,9 @@
         <div class="container">
             <h2 class="section-title">نبذة عن الرواية</h2>
             <div class="card">
+                <div class="book-3d-wrapper">
+                    <img src="images/novelcover.jpg" alt="نسخة ثلاثية الأبعاد من كتاب رواية تمنراست للكاتب أمير صالح رحموني" loading="lazy">
+                </div>
                 <p>
                     "عندما رست السفينة في الميناء القديم وسط أجواء ربيعية، لم يكن أحد يدري أن هذه السفينة تحمل جثة طفلة ممزقة، 
                     ويدَي والديها المشؤومين الملطخة بدماء ساخنة لم تجف بعد، غيّروا مسار حياتهم السحرية بمجرد نهاية الحرب العالمية الأولى، 
@@ -48,58 +52,21 @@
         </div>
     </section>
 
-    <!-- Author Section -->
-    <section class="author" id="author">
+    <!-- Wiki Section -->
+    <section class="wiki-section" id="wiki" style="text-align: center; padding: 60px 0;">
         <div class="container">
-            <h2 class="section-title">عن الكاتب</h2>
-            <div class="card author-card">
-                <img src="author-photo.jpg" alt="أمير صالح رحموني" class="author-photo" onerror="this.src='https://via.placeholder.com/150/1a1a1a/7c0a02?text=أمير+صالح'">
-                <h3 class="author-name">أمير صالح رحموني</h3>
-                <div class="author-bio">
-                    <!-- Placeholder for bio -->
-                    <div class="author-bio-placeholder"></div>
-                    <div class="author-bio-placeholder" style="width: 60%;"></div>
-                </div>
-            </div>
+            <a href="#" data-social="taamonrasetwiki" target="_blank" rel="noopener" class="wiki-button">
+                <i class="fas fa-book-open" style="margin-left: 10px;"></i>المزيد عن عالم TaAmonRaSet
+            </a>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <h2 class="section-title">آراء القراء</h2>
-            <div class="testimonials-grid">
-                
-                <!-- Card 1 -->
-                <div class="testimonial-card">
-                    <div class="quote-icon">"</div>
-                    <p class="quote-text">[اقتباس من القارئ حول الرواية يوضع هنا لاحقًا. يصف الأجواء المرعبة والقصة المشوقة.]</p>
-                    <p class="quote-author">- [اسم القارئ 1]</p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="testimonial-card">
-                    <div class="quote-icon">"</div>
-                    <p class="quote-text">[اقتباس من القارئ حول الرواية يوضع هنا لاحقًا. يصف الأجواء المرعبة والقصة المشوقة.]</p>
-                    <p class="quote-author">- [اسم القارئ 2]</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="testimonial-card">
-                    <div class="quote-icon">"</div>
-                    <p class="quote-text">[اقتباس من القارئ حول الرواية يوضع هنا لاحقًا. يصف الأجواء المرعبة والقصة المشوقة.]</p>
-                    <p class="quote-author">- [اسم القارئ 3]</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <!-- Secondary CTA Section -->
     <section class="cta-section">
         <div class="container">
             <h2 style="font-size: 2rem; margin-bottom: 30px;">هل أنت مستعد لدخول عالم تمنراست؟</h2>
-            <a href="#" class="order-btn">اطلب نسختك الآن</a>
+            <a href="#" class="order-btn" data-social="order_button" target="_blank" rel="noopener">اطلب نسختك الآن</a>
         </div>
     </section>
 
@@ -108,31 +75,35 @@
         <div class="container">
             <div class="footer-content">
                 
-                <!-- Publisher Links -->
-                <div class="footer-col">
-                    <h3>دار العارف للنشر والتوزيع (Alarif)</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 15px;">تواصل مع الدار لطلب نسختك:</p>
-                    <div class="social-links">
-                        <a href="#" id="link-alarif-fb" class="social-link" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" id="link-alarif-ig" class="social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" id="link-alarif-email" class="social-link" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="#" id="link-alarif-wa" class="social-link" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <!-- Social Links -->
+                <div class="footer-col footer-socials-wrapper">
+                    <!-- Author Links -->
+                    <div class="social-section author-social">
+                        <h4>معلومات الكاتب</h4>
+                        <div class="social-links">
+                            <a href="#" data-social="author_facebook" class="social-link" target="_blank" rel="noopener" aria-label="فيسبوك الكاتب"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" data-social="author_instagram" class="social-link" target="_blank" rel="noopener" aria-label="إنستغرام الكاتب"><i class="fab fa-instagram"></i></a>
+                            <a href="#" data-social="author_tiktok" class="social-link" target="_blank" rel="noopener" aria-label="تيك توك الكاتب"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" data-social="author_x" class="social-link" target="_blank" rel="noopener" aria-label="حساب الكاتب على X"><i class="fab fa-x-twitter"></i></a>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Author Links -->
-                <div class="footer-col" style="text-align: center;">
-                    <h3>الكاتب</h3>
-                    <div class="social-links" style="justify-content: center;">
-                        <a href="#" id="link-author-fb" class="social-link" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" id="link-author-ig" class="social-link" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" id="link-author-tw" class="social-link" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    
+                    <!-- Publisher Links -->
+                    <div class="social-section publisher-social">
+                        <h4>دار العارف للنشر والتوزيع</h4>
+                        <div class="social-links">
+                            <a href="#" data-social="publisher_facebook" class="social-link" target="_blank" rel="noopener" aria-label="فيسبوك دار النشر"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" data-social="publisher_instagram" class="social-link" target="_blank" rel="noopener" aria-label="إنستغرام دار النشر"><i class="fab fa-instagram"></i></a>
+                            <a href="#" data-social="publisher_tiktok" class="social-link" target="_blank" rel="noopener" aria-label="تيك توك دار النشر"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" data-social="publisher_email" class="social-link" target="_blank" rel="noopener" aria-label="راسل دار النشر"><i class="fas fa-envelope"></i></a>
+                            <a href="#" data-social="publisher_whatsapp" class="social-link" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب"><i class="fab fa-whatsapp"></i></a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Footer CTA -->
                 <div class="footer-col" style="display: flex; justify-content: flex-end;">
-                    <a href="#" class="order-btn">اطلب الآن</a>
+                    <a href="#" class="order-btn" data-social="order_button" target="_blank" rel="noopener">اطلب الآن</a>
                 </div>
 
             </div>
@@ -145,10 +116,11 @@
 
     <!-- Sticky Mobile CTA -->
     <div class="sticky-cta">
-        <a href="#" class="order-btn">اطلب نسختك الآن</a>
+        <a href="#" class="order-btn" data-social="order_button" target="_blank" rel="noopener">اطلب نسختك الآن</a>
     </div>
 
     <!-- Custom JS -->
     <script src="script.js"></script>
+    <script type="module" src="load-social-links.js"></script>
 </body>
 </html>
