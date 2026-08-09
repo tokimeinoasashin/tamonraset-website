@@ -1,0 +1,12 @@
+{
+  "name": "tamonraset-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for Taamonraset novel",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y serve . -p 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
